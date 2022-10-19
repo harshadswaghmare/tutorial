@@ -2,13 +2,19 @@ package com.tutorial.model;
 
 public class Tutorial {
     private long id;
-    private String title;
+    String title;
     private String description;
     private boolean published;
 
-    public Tutorial() {
-
+   // private List<Student> students;
+    public Tutorial()
+    {
+      // students =new ArrayList<Student>();
     }
+  //  public Tutorial(){
+
+  //  }
+
 
     public Tutorial(long id, String title, String description, boolean published) {
         this.id = id;
@@ -55,8 +61,15 @@ public class Tutorial {
         this.published = isPublished;
     }
 
+   //public List<Student>getStudents() {return students;}
+
+   // public void setStudents(List<Student>students){
+     //   this.students=students;
+    //}
+
+
     @Override
     public String toString() {
-        return "Tutorial [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + published + "]";
+        return "Tutorial [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + published +  "]";
     }
 }

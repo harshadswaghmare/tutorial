@@ -9,7 +9,7 @@ public interface TutorialRepository {
 
     int update(Tutorial book);
 
-    Tutorial findById(Long id);
+    Tutorial findById(Long  id);
 
     int deleteById(Long id);
 
